@@ -2,7 +2,7 @@ const fs = require("fs");
 const Discord = require("discord.js");
 const Client = require("./client/Client");
 const discordTTS = require("discord-tts");
-const { prefix, token, activity, activityType } = require("./config.json");
+const { prefix, activity, activityType } = require("./config");
 const ytdl = require("ytdl-core");
 const { Player } = require("discord-player");
 const { channel } = require("diagnostics_channel");
@@ -14,12 +14,17 @@ const {
   VoiceConnectionStatus,
   joinVoiceChannel,
 } = require("@discordjs/voice");
+require("dotenv").config();
+
+const token = process.env.TOKEN;
 
 let voiceConnection;
 let audioPlayer = new AudioPlayer();
 
 const client = new Client();
 client.commands = new Discord.Collection();
+
+console.log(token);
 
 // Set client commands
 const commandFiles = fs
