@@ -1,0 +1,32 @@
+{
+  "name": "musikal",
+  "version": "1.0.0",
+  "description": "A simple discord music bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "prettier --write \"**/*.js\""
+  },
+  "keywords": [
+    "discord",
+    "music",
+    "bot"
+  ],
+  "author": "Nick Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.7.0",
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "@discordjs/voice": "^0.7.5",
+    "@sapphire/snowflake": "^3.0.1",
+    "discord-player": "^5.2.0",
+    "discord-tts": "^1.2.1",
+    "discord.js": "^13.6.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "libsodium-wrappers": "^0.7.9",
+    "node": "^17.3.1",
+    "ytdl-core": "^4.10.0"
+  }
+}
