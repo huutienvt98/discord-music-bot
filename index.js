@@ -97,7 +97,7 @@ client.on("messageCreate", async (message) => {
     await message.guild.commands
       .set(client.commands)
       .then(() => {
-        message.reply("Deployed!");
+        message.reply("Deployed successfully!");
       })
       .catch((err) => {
         message.reply(
