@@ -125,7 +125,7 @@ client.on("interactionCreate", async (interaction) => {
 client.on("voiceStateUpdate", async (oldState, newState) => {
   if (
     oldState.channelId === null &&
-    oldState.member.user.username === "huutienvt98"
+    oldState.member.user.username === "starlite"
   ) {
     const stream = discordTTS.getVoiceStream(
       "Hear ye hear ye! The king of clowns is here!"
